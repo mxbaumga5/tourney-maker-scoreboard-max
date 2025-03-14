@@ -36,19 +36,19 @@ void displayTheScore()
     int firstLeftDigit = scoreLeft / 10;
     if (firstLeftDigit != 0)
     {
-        displayNumber(firstLeftDigit, FIRST_DIGIT_BEGIN, colorRed);
+        displayNumber(firstLeftDigit, FIRST_DIGIT_BEGIN, colorLeft);
     }
     int secondLeftDigit = scoreLeft % 10;
-    displayNumber(secondLeftDigit, SECOND_DIGIT_BEGIN, colorRed);
+    displayNumber(secondLeftDigit, SECOND_DIGIT_BEGIN, colorLeft);
 
     // Display the Right Score
     int firstRightDigit = scoreRight / 10;
     if (firstRightDigit != 0)
     {
-        displayNumber(firstRightDigit, THIRD_DIGIT_BEGIN, colorBlue);
+        displayNumber(firstRightDigit, THIRD_DIGIT_BEGIN, colorRight);
     }
     int secondRightDigit = scoreRight % 10;
-    displayNumber(secondRightDigit, FOURTH_DIGIT_BEGIN, colorBlue);
+    displayNumber(secondRightDigit, FOURTH_DIGIT_BEGIN, colorRight);
     strip.show();
 }
 

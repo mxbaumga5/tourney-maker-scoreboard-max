@@ -21,6 +21,8 @@ extern Adafruit_NeoPixel strip;
 
 extern int scoreLeft;
 extern int scoreRight;
+extern uint32_t colorLeft;
+extern uint32_t colorRight;
 
 // Funktionsprototypen
 void setupLEDs();
